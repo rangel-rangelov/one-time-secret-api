@@ -1,7 +1,7 @@
-import UrlID from '../../src/models/UrlID';
-import URLIdTooShortError from '../../src/models/errors/UrlIDTooShortError';
+import UrlID from '../../../src/domain/models/UrlID';
+import URLIdTooShortError from '../../../src/domain/models/errors/UrlIDTooShortError';
 
-describe('UrlID Test', () => {
+describe('UrlID Model', () => {
   it('should create an instance of UrlId class', () => {
     expect(new UrlID('asdqwe1234')).toBeInstanceOf(UrlID);
   });
