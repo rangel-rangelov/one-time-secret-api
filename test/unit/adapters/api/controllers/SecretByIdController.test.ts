@@ -1,11 +1,11 @@
 
 import { NextFunction, request, Request, response, Response  } from 'express';
 
-import SecretsByIdController from '../../../../src/adapters/api/controllers/SecretsByIdController';
-import ValidationError from '../../../../src/adapters/api/ValidationError';
-import SecretNotFoundInRepositoryError from '../../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
-import Secret from '../../../../src/domain/models/Secret';
-import SecretRetriever from '../../../../src/domain/ports/in/SecretRetriever';
+import SecretsByIdController from '../../../../../src/adapters/api/controllers/SecretsByIdController';
+import ValidationError from '../../../../../src/adapters/api/ValidationError';
+import SecretNotFoundInRepositoryError from '../../../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
+import Secret from '../../../../../src/domain/models/Secret';
+import SecretRetriever from '../../../../../src/domain/ports/in/SecretRetriever';
 
 describe('Secrets by ID', () => {
   it('should throw error when sending invalid url', () => {

@@ -1,10 +1,10 @@
 
 import { NextFunction, request, Request, response, Response  } from 'express';
 
-import SecretsController from '../../../../src/adapters/api/controllers/SecretsController';
-import ValidationError from '../../../../src/adapters/api/ValidationError';
-import SecretStorer from '../../../../src/domain/ports/in/SecretStorer';
-import UrlID from '../../../../src/domain/models/UrlID';
+import SecretsController from '../../../../../src/adapters/api/controllers/SecretsController';
+import ValidationError from '../../../../../src/adapters/api/ValidationError';
+import SecretStorer from '../../../../../src/domain/ports/in/SecretStorer';
+import UrlID from '../../../../../src/domain/models/UrlID';
 
 
 describe('Secrets by ID', () => {

@@ -1,9 +1,9 @@
 import { NextFunction, request, Request, response, Response  } from 'express';
-import errorHandler from '../../../../src/adapters/api/middlewares/ErrorHandler';
-import ValidationError from '../../../../src/adapters/api/ValidationError';
-import URLIdTooShortError from '../../../../src/domain/models/errors/UrlIDTooShortError';
-import SecretTooShortError from '../../../../src/domain/models/errors/SecretTooShortError';
-import SecretNotFoundInRepositoryError from '../../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
+import errorHandler from '../../../../../src/adapters/api/middlewares/ErrorHandler';
+import ValidationError from '../../../../../src/adapters/api/ValidationError';
+import URLIdTooShortError from '../../../../../src/domain/models/errors/UrlIDTooShortError';
+import SecretTooShortError from '../../../../../src/domain/models/errors/SecretTooShortError';
+import SecretNotFoundInRepositoryError from '../../../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
 
 describe('ErrorHandler', () => {
   it('should send an uncontrolled error', () => {

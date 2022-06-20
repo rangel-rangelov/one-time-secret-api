@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 
-import MongoRepository from '../../../src/adapters/repositories/MongoRepository';
-import UrlID from '../../../src/domain/models/UrlID';
-import Secret from '../../../src/domain/models/Secret';
-import { SecretModel } from '../../../src/adapters/repositories/SecretModel';
-import SecretNotFoundInRepositoryError from '../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
+import MongoRepository from '../../../../src/adapters/repositories/MongoRepository';
+import UrlID from '../../../../src/domain/models/UrlID';
+import Secret from '../../../../src/domain/models/Secret';
+import { SecretModel } from '../../../../src/adapters/repositories/SecretModel';
+import SecretNotFoundInRepositoryError from '../../../../src/domain/models/errors/SecretNotFoundInRepositoryError';
 
 describe('MongoRepository', () => {
   it('should connect to the database', () => {

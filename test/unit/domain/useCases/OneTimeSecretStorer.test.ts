@@ -1,8 +1,8 @@
-import UrlID from '../../../src/domain/models/UrlID';
-import Secret from '../../../src/domain/models/Secret';
-import OneTimeSecretStorer from '../../../src/domain/useCases/OneTimeSecretStorer';
-import SecretRepository from '../../../src/domain/ports/out/SecretRepository';
-import TokenGenerator from '../../../src/domain/ports/out/TokenGenerator';
+import UrlID from '../../../../src/domain/models/UrlID';
+import Secret from '../../../../src/domain/models/Secret';
+import OneTimeSecretStorer from '../../../../src/domain/useCases/OneTimeSecretStorer';
+import SecretRepository from '../../../../src/domain/ports/out/SecretRepository';
+import TokenGenerator from '../../../../src/domain/ports/out/TokenGenerator';
 
 describe('OneTimeSecretStorer', () => {
   it('should store a secret and return a urlId to query after', async () => {
