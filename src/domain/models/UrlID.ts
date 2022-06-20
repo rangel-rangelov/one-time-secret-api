@@ -3,4 +3,8 @@ export default class UrlID {
   constructor(private urlId: string) {
     if (urlId.length < 10) throw new URLIdTooShortError();
   }
+
+  toString(): string {
+    return this.urlId;
+  }
 }

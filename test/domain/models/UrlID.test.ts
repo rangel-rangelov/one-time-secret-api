@@ -9,4 +9,8 @@ describe('UrlID Model', () => {
   it('should throw an error if the UrlID has length less than 10', () => {
     expect(() => new UrlID('12')).toThrow(URLIdTooShortError);
   });
+
+  it('should return a string representation on the toString method', () => {
+    expect(new UrlID('asdqwe1234').toString()).toBe('asdqwe1234');
+  })
 });

@@ -9,4 +9,8 @@ describe('Secret Model', () => {
   it('should throw an error if the secret has length less than 3', () => {
     expect(() => new Secret('12')).toThrow(SecretTooShortError);
   });
+
+  it('should return a string representation on the toString method', () => {
+    expect(new Secret('123').toString()).toBe('123');
+  });
 });
