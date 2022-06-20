@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 
-import Secret from '../../models/Secret';
-import UrlID from '../../models/UrlID';
-import SecretRepository from '../../ports/out/SecretRepository';
+import Secret from '../../domain/models/Secret';
+import UrlID from '../../domain/models/UrlID';
+import SecretRepository from '../../domain/ports/out/SecretRepository';
 import { SecretModel } from './SecretModel';
-import SecretNotFoundInRepositoryError from '../../models/errors/SecretNotFoundInRepositoryError';
+import SecretNotFoundInRepositoryError from '../../domain/models/errors/SecretNotFoundInRepositoryError';
 
 export default class MongoRepository implements SecretRepository {
   constructor() {
